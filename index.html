@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Saral Beema Project Presentation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f6f8fa;
+    margin: 0;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  .presentation {
+    width: 80vw;
+    max-width: 900px;
+    margin: 2rem auto 3rem auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+  }
+
+  header {
+    background: #0052cc;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.9rem;
+  }
+  header p {
+    margin: 0.2rem 0 0;
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.85;
+  }
+
+  .slides {
+    flex: 1;
+    padding: 2rem 3rem;
+    position: relative;
+  }
+
+  .slide {
+    display: none;
+    animation: fadeInSlide 0.9s ease forwards;
+  }
+  .slide.active {
+    display: block;
+  }
+
+  @keyframes fadeInSlide {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  h2 {
+    color: #0052cc;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  h3 {
+    margin: 1.5rem 0 0.6rem;
+    font-weight: 600;
+    color: #333;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li {
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 24px;
+  }
+  li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #00a86b;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .icon {
+    font-size: 48px;
+    color: #0052cc;
+    margin-bottom: 10px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .incentive {
+    background: #e6f4ea;
+    border-left: 6px solid #00a86b;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #007740;
+  }
+
+  .footer-nav {
+    background: #f0f0f0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  button.nav-btn {
+    background: #0052cc;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.3rem;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,82,204,0.6);
+    transition: background 0.3s;
+  }
+  button.nav-btn:disabled {
+    background: #a5b8e0;
+    cursor: default;
+    box-shadow: none;
+  }
+  button.nav-btn:hover:not(:disabled) {
+    background: #003d99;
+  }
+
+  .footer-nav .slide-counter {
+    align-self: center;
+    font-weight: 600;
+    color: #666;
+  }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    .presentation {
+      width: 95vw;
+      margin: 1rem auto 2rem auto;
+      min-height: 550px;
+    }
+    .slides {
+      padding: 1.5rem 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="presentation" role="main" aria-label="Saral Beema Project Presentation">
+  <header>
+    <h1>Koption by Saral Beema Project</h1>
+    <p>Role Requirements and Responsibilities</p>
+  </header>
+  <section class="slides">
+    <!-- Slide 1: Title -->
+    <article class="slide active" aria-label="Title Slide">
+      <div class="section-header">
+        <i class="fas fa-shield-alt icon" aria-hidden="true"></i>
+        <h2>Welcome!</h2>
+      </div>
+      <p>Presentation on <strong>Koption By Saral Beema Project</strong> covering all role requirements and responsibilities.</p>
+      <p><strong>Date:</strong> [ 24 May 2025]</p>
+      <p><strong>Presenter:</strong> [ Gourav Rao]</p>
+    </article>
+
+    <!-- Slide 2: Agenda -->
+    <article class="slide" aria-label="Agenda">
+      <h2><i class="fas fa-list-alt"></i> Agenda</h2>
+      <ul>
+        <li>Introduction to Koption BY Saral Beema Project</li>
+        <li>Role Requirements and Responsibilities
+          <ul>
+            <li>Masters</li>
+            <li>HR Acquisition (HR Acq)</li>
+            <li>Associates</li>
+          </ul>
+        </li>
+        <li>What We Provide</li>
+        <li>Incentive Structure</li>
+        <li>Q&A</li>
+      </ul>
+    </article>
+
+    <!-- Slide 3: Introduction -->
+    <article class="slide" aria-label="Introduction">
+      <h2><i class="fas fa-info-circle"></i> Introduction</h2>
+      <p>The KOption by Saral Beema Project aims to recruit and train associates for work-from-home opportunities in the insurance sector. It is designed to empower students, housewives, and senior citizens by providing training, tools, and incentives.</p>
+    </article>
+
+    <!-- Slide 4: Masters Requirements -->
+    <article class="slide" aria-label="Masters Requirements">
+      <div class="section-header">
+        <i class="fas fa-chalkboard-teacher icon" aria-hidden="true"></i>
+        <h2>Masters - Requirements</h2>
+      </div>
+      <ul>
+        <li>Fast learners with quick adaptability</li>
+        <li>Graduates with basic coding knowledge</li>
+        <li>Fluent in English</li>
+        <li>Proficient in using webmail, email, and messaging platforms</li>
+        <li>High-speed typing skills</li>
+        <li>Familiar with Power BI</li>
+      </ul>
+    </article>
+
+    <!-- Slide 5: Masters Responsibilities -->
+    <article class="slide" aria-label="Masters Responsibilities">
+      <div class="section-header">
+        <i class="fas fa-chalkboard-teacher icon" aria-hidden="true"></i>
+        <h2>Masters - Responsibilities</h2>
+      </div>
+      <ul>
+        <li>Train HR Acquisition team on recruiting associates and platforms</li>
+        <li>Guide HR Acq on roles and responsibilities</li>
+        <li>Send regular updates, reminders, and notices to HRs</li>
+        <li>Provide tips for improving recruitment engagement</li>
+        <li>Maintain communication and track HR performance</li>
+      </ul>
+    </article>
+
+    <!-- Slide 6: What We Provide to Masters -->
+    <article class="slide" aria-label="What We Provide to Masters">
+      <div class="section-header">
+        <i class="fas fa-gift icon" aria-hidden="true"></i>
+        <h2>What We Provide to Masters</h2>
+      </div>
+      <ul>
+        <li>Webmail and Mod Access</li>
+        <li>Sheets and Data Access</li>
+        <li>Special Training Sessions</li>
+        <li>Payment Portal Access</li>
+      </ul>
+    </article>
+
+    <!-- Slide 7: HR Acquisition - Requirements -->
+    <article class="slide" aria-label="HR Acquisition Requirements">
+      <div class="section-header">
+        <i class="fas fa-user-tie icon" aria-hidden="true"></i>
+        <h2>HR Acquisition (HR Acq) - Requirements</h2>
+      </div>
+      <ul>
+        <li>Intermediate English proficiency (reading and organizing)</li>
+        <li>Basic knowledge of webmail and chat platforms</li>
+        <li>Minimum 12th pass or higher</li>
+        <li>Familiarity with Power BI preferred</li>
+        <li>Basic troubleshooting and system management skills</li>
+        <li>Skills in LinkedIn and job portals</li>
+        <li>Ability to identify and recruit suitable candidates</li>
+        <li>Project management experience is a plus</li>
+      </ul>
+    </article>
+
+    <!-- Slide 8: HR Acquisition - Responsibilities -->
+    <article class="slide" aria-label="HR Acquisition Responsibilities">
+      <div class="section-header">
+        <i class="fas fa-user-tie icon" aria-hidden="true"></i>
+        <h2>HR Acquisition (HR Acq) - Responsibilities</h2>
+      </div>
+      <ul>
+        <li>Recruit students, housewives, and senior citizens for work-from-home opportunities</li>
+        <li>Maintain records of associates and their performance</li>
+        <li>Track training payments (Rs. 149)</li>
+        <li>Ensure data accuracy and report progress to Masters</li>
+        <li>Follow up with associates and ensure targets are met</li>
+        <li>Send weekly updates and performance data to Masters</li>
+      </ul>
+    </article>
+
+    <!-- Slide 9: What We Provide to HRs -->
+    <article class="slide" aria-label="What We Provide to HRs">
+      <div class="section-header">
+        <i class="fas fa-gift icon" aria-hidden="true"></i>
+        <h2>What We Provide to HRs</h2>
+      </div>
+      <ul>
+        <li>Webmail Access</li>
+        <li>Access to LinkedIn and other platforms</li>
+        <li>Sheets Access</li>
+        <li>Training and knowledge improvement sessions</li>
+        <li>Recruitment tools and support</li>
+      </ul>
+    </article>
+
+    <!-- Slide 10: Associates - Who Can Apply -->
+    <article class="slide" aria-label="Associates Who Can Apply">
+      <div class="section-header">
+        <i class="fas fa-users icon" aria-hidden="true"></i>
+        <h2>Associates - Who Can Apply</h2>
+      </div>
+      <ul>
+        <li>Students and undergraduates</li>
+        <li>Housewives</li>
+        <li>Senior citizens with good communication skills</li>
+      </ul>
+    </article>
+
+    <!-- Slide 11: Associates - Requirements -->
+    <article class="slide" aria-label="Associates Requirements">
+      <div class="section-header">
+        <i class="fas fa-users icon" aria-hidden="true"></i>
+        <h2>Associates - Requirements</h2>
+      </div>
+      <ul>
+        <li>Must have a mobile phone and internet access</li>
+        <li>Ability to work from home</li>
+        <li>Punctual and capable of completing tasks before deadlines</li>
+      </ul>
+    </article>
+
+    <!-- Slide 12: Associates - Responsibilities -->
+    <article class="slide" aria-label="Associates Responsibilities">
+      <div class="section-header">
+        <i class="fas fa-users icon" aria-hidden="true"></i>
+        <h2>Associates - Responsibilities</h2>
+      </div>
+      <ul>
+        <li>Handle tasks and projects efficiently</li>
+        <li>Generate clients through calling and lead generation</li>
+        <li>Update client details via email or Excel</li>
+        <li>Participate in Saral Beema’s “Raption” initiative including teaching, learning, and insurance sales</li>
+      </ul>
+    </article>
+
+    <!-- Slide 13: Incentive Structure -->
+    <article class="slide" aria-label="Incentive Structure">
+      <h2><i class="fas fa-coins"></i> Incentive Structure (Insurance Sales)</h2>
+      <div class="incentive"><i class="fas fa-heart"></i> Health Insurance: 18% commission</div>
+      <div class="incentive"><i class="fas fa-life-ring"></i> Term Life Insurance: 30% commission</div>
+      <p><strong>Earnings:</strong> Based on work quality, performance, and targets met.</p>
+    </article>
+
+    <!-- Slide 14: What We Provide to Associates -->
+    <article class="slide" aria-label="What We Provide to Associates">
+      <div class="section-header">
+        <i class="fas fa-gift icon" aria-hidden="true"></i>
+        <h2>What We Provide to Associates</h2>
+      </div>
+      <ul>
+        <li>Access to Masters and HR for guidance</li>
+        <li>Training sessions</li>
+        <li>Incentives based on performance</li>
+      </ul>
+    </article>
+
+    <!-- Slide 15: Conclusion -->
+    <article class="slide" aria-label="Conclusion">
+      <h2><i class="fas fa-check-circle"></i> Conclusion</h2>
+      <p>Summary of roles and responsibilities across Masters, HRs, and Associates.</p>
+      <p>Emphasis on collaboration and active participation for success of Saral Beema Project.</p>
+      <p>Let's work together to empower and grow the community!</p>
+    </article>
+
+    <!-- Slide 16: Q&A -->
+    <article class="slide" aria-label="Question and Answer">
+      <h2><i class="fas fa-comments"></i> Q&amp;A</h2>
+      <p>Feel free to ask any questions or share feedback.</p>
+    </article>
+  </section>
+
+  <footer class="footer-nav" aria-label="Slide navigation">
+    <button class="nav-btn" id="prevBtn" aria-label="Previous Slide" disabled><i class="fas fa-chevron-left"></i> Prev</button>
+    <div class="slide-counter" aria-live="polite" aria-atomic="true">Slide 1 / 16</div>
+    <button class="nav-btn" id="nextBtn" aria-label="Next Slide">Next <i class="fas fa-chevron-right"></i></button>
+  </footer>
+</div>
+
+<script>
+  (function() {
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const counter = document.querySelector('.slide-counter');
+    let currentIndex = 0;
+
+    function updateSlide() {
+      slides.forEach((slide, index) => {
+        slide.classList.toggle('active', index === currentIndex);
+      });
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex === slides.length - 1;
+      counter.textContent = `Slide ${currentIndex + 1} / ${slides.length}`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlide();
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < slides.length - 1) {
+        currentIndex++;
+        updateSlide();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'ArrowRight' || e.key === 'PageDown') {
+        if(currentIndex < slides.length - 1) {
+          currentIndex++;
+          updateSlide();
+        }
+      } else if(e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        if(currentIndex > 0) {
+          currentIndex--;
+          updateSlide();
+        }
+      }
+    });
+
+    updateSlide();
+  })();
+</script>
+</body>
+</html>
+
